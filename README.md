@@ -22,5 +22,5 @@ Two XGBoost models [**ensemble learning**](https://www.geeksforgeeks.org/machine
 * Trains an [XGBClassifier](https://www.geeksforgeeks.org/machine-learning/xgbclassifier/).
 * ![XGB](https://media.geeksforgeeks.org/wp-content/uploads/20250521100554969405/XG-Boost.webp)
 * Evaluates confusion matrix, [precision](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall), [recall](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall), [F1-score](https://www.geeksforgeeks.org/machine-learning/f1-score-in-machine-learning/), and [ROC-AUC](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc).
-* Reported fraud recall: **0.88**.
-* Reported ROC-AUC: **0.938**.
+* Fraud recall: **0.88**.
+* ROC-AUC: **0.938**.
