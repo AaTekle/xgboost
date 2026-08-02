@@ -1,8 +1,8 @@
-# README for Credit Card Fraud Detection - XGBoost
+# Credit Card Fraud Detection - XGBoost
 
-This project aims to detect fraudulent credit card transactions using an XGBoost classification model. By leveraging techniques such as SMOTE for handling imbalanced data, and evaluation metrics including Precision, Recall, and AUC-ROC, the model achieves high accuracy and robustness in identifying fraud.
+Credit Card Fraud Detection using XGBoost classification models. Using techniques like SMOTE to handle imbalanced data, and evaluation metrics including Precision, Recall, and AUC-ROC, the model achieves high accuracy and robustness in identifying fraud.
 
-## Project Workflow
+## Project Workflow:
 
 ### 1. Data Loading and Preprocessing
 - **Data Loading**: The dataset is loaded with `pandas` and checked for null values (no missing data was found).
