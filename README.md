@@ -23,6 +23,8 @@ Two XGBoost models ([**ensemble learning**])(https://www.geeksforgeeks.org/machi
         * this shows that the high [R²](https://en.wikipedia.org/wiki/Coefficient_of_determination) reiterates the fact that daily stock prices usually change very little from one day to the next
     * the model’s 52.19% directional accuracy suggests a small (predictive) edge, but not enough to show that it would remain profitable after trading costs, slippage, and market risk
     * the model finds short-term market patterns, but does not perform better than the simple baseline
+    * ![XGB Regression](https://ai.plainenglish.io/xgboost-regression-in-depth-cb2b3f623281)
+    * https://ai.plainenglish.io/xgboost-regression-in-depth-cb2b3f623281
 
 ### Credit Card Fraud Detection:
 
