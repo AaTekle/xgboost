@@ -8,7 +8,7 @@ Two XGBoost models [**ensemble learning**](https://www.geeksforgeeks.org/machine
 
 * Predicts the next trading day's closing price.
 * Uses five years of S&P 500 OHLCV data.
-* Set up [moving averages](https://www.investopedia.com/terms/m/movingaverage.asp), [RSI](https://www.investopedia.com/terms/r/rsi.asp), [EMA](https://www.investopedia.com/terms/e/ema.asp), [MACD](https://www.investopedia.com/terms/m/macd.asp), [Bollinger Bands](https://www.investopedia.com/terms/b/bollingerbands.asp), [VWAP(Volume-Weighted Average Price)](https://www.investopedia.com/terms/v/vwap.asp), [lagged values](https://www.geeksforgeeks.org/machine-learning/what-is-lag-in-time-series-forecasting/), and [time-based features](https://feature-engine.trainindata.com/en/1.8.x/user_guide/timeseries/forecasting/index.html).
+* Set up [Moving Averages](https://www.investopedia.com/terms/m/movingaverage.asp), [RSI](https://www.investopedia.com/terms/r/rsi.asp), [EMA](https://www.investopedia.com/terms/e/ema.asp), [MACD](https://www.investopedia.com/terms/m/macd.asp), [Bollinger Bands](https://www.investopedia.com/terms/b/bollingerbands.asp), [VWAP(Volume-Weighted Average Price)](https://www.investopedia.com/terms/v/vwap.asp), [lagged values](https://www.geeksforgeeks.org/machine-learning/what-is-lag-in-time-series-forecasting/), and [time-based features](https://feature-engine.trainindata.com/en/1.8.x/user_guide/timeseries/forecasting/index.html).
 * Uses a 80/20 train-test split.
 * Trains an XGBoost regressor with regularization, early stopping, and grid search.
 * Best test RMSE: **2.67**.
