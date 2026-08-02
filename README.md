@@ -16,7 +16,7 @@ Two XGBoost models [**ensemble learning**](https://www.geeksforgeeks.org/machine
 * uses chronological, purged train-validation-test splits: 411,136 training rows, 89,734 validation rows, and 91,414 test rows.
 * trains an XGBoost regressor with native categorical ticker support, regularization, row and feature subsampling, and validation-based early stopping.
 * tests four parameter configurations; the model uses 18 trees, max_depth=7, min_child_weight=20, subsample=0.75, and colsample_bytree=0.90.
-* /**test results:** RMSE 2.3976, MAE 0.9621, MAPE 0.9775%, R² 0.999663, and 52.19% directional accuracy.
+* **test results:** RMSE 2.3976, MAE 0.9621, MAPE 0.9775%, R² 0.999663, and 52.19% directional accuracy.
 * **Takeaways:**
     * the model produced accurate price-level forecasts, with an average error below 1% of the actual closing price
     * (however) the naive baseline, which uses today’s closing price as tomorrow’s prediction, achieved a lower RMSE of 2.3918 and performed 0.242% better than XGBoost
