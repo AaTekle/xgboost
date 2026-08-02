@@ -1,6 +1,6 @@
 # XGBoost Models (Financial Data)
 
-Two XGBoost projects tailored to financial [**regression**](https://en.wikipedia.org/wiki/Regression_analysis) and [**classification**](https://www.ibm.com/think/topics/classification-machine-learning) tasks.
+Two XGBoost models [**ensemble learning**](https://www.geeksforgeeks.org/machine-learning/a-comprehensive-guide-to-ensemble-learning/) tailored to financial [**regression**](https://en.wikipedia.org/wiki/Regression_analysis) and [**classification**](https://www.ibm.com/think/topics/classification-machine-learning) tasks.
 
 ## Projects
 
