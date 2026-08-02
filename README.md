@@ -16,11 +16,11 @@ Two XGBoost models [**ensemble learning**](https://www.geeksforgeeks.org/machine
 * uses chronological, purged train-validation-test splits: 411,136 training rows, 89,734 validation rows, and 91,414 test rows
 * trained XGBoost regressor with native categorical ticker support, regularization, row and feature subsampling, and validation-based early stopping
 * tests four parameter configurations; the model uses 18 trees, max_depth=7, min_child_weight=20, subsample=0.75, and colsample_bytree=0.90
-* **test results:** RMSE 2.3976, MAE 0.9621, MAPE 0.9775%, R² 0.999663, and 52.19% directional accuracy
+* **test results:** [RMSE](https://en.wikipedia.org/wiki/Root_mean_square_deviation) 2.3976, [MAE](https://en.wikipedia.org/wiki/Mean_absolute_error) 0.9621, [MAPE](https://en.wikipedia.org/wiki/Mean_absolute_percentage_error) 0.9775%, [R²](https://en.wikipedia.org/wiki/Coefficient_of_determination) 0.999663, and 52.19% [directional accuracy](https://en.wikipedia.org/wiki/Mean_directional_accuracy)
 * **Takeaways:**
     * the model had accurate price-level forecasts, with an average error below 1% of the actual closing price
-    * (however) the naive baseline, which uses today’s closing price as tomorrow’s prediction, achieved a lower RMSE of 2.3918 and performed 0.242% better than XGBoost
-        * this shows that the high R² reiterates the fact that daily stock prices usually change very little from one day to the next
+    * (however) the naive baseline, which uses today’s closing price as tomorrow’s prediction, achieved a lower [RMSE](https://en.wikipedia.org/wiki/Root_mean_square_deviation) of 2.3918 and performed 0.242% better than XGBoost
+        * this shows that the high [R²](https://en.wikipedia.org/wiki/Coefficient_of_determination) reiterates the fact that daily stock prices usually change very little from one day to the next
     * the model’s 52.19% directional accuracy suggests a small (predictive) edge, but not enough to show that it would remain profitable after trading costs, slippage, and market risk
     * the model finds short-term market patterns, but does not perform better than the simple baseline
 
