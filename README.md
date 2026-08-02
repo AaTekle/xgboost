@@ -36,7 +36,7 @@ Two XGBoost models ([**ensemble learning**])(https://www.geeksforgeeks.org/machi
 * When handling imbalanced data, random sampling can drop or underrepresent rare minority classes in your subsets
 * Uses [**SMOTE**](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html) on the training set to handle class imbalance.
 * Trains an [XGBClassifier](https://www.geeksforgeeks.org/machine-learning/xgbclassifier/).
-* ![XGB](https://media.geeksforgeeks.org/wp-content/uploads/20250521100554969405/XG-Boost.webp)
+ ![XGB](https://media.geeksforgeeks.org/wp-content/uploads/20250521100554969405/XG-Boost.webp)
 * Evaluates [confusion matrix](https://www.geeksforgeeks.org/machine-learning/confusion-matrix-machine-learning/), [precision](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall), [recall](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall), [F1-score](https://www.geeksforgeeks.org/machine-learning/f1-score-in-machine-learning/), and [ROC-AUC](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc).
 * [**Fraud recall:**](https://www.datacamp.com/tutorial/precision-vs-recall) **0.88**.
 * [**ROC-AUC:**](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc) **0.938**.
