@@ -1,6 +1,6 @@
 # XGBoost Models (Financial Data)
 
-Two XGBoost projects tailored to financial regression and classification tasks.
+Two XGBoost projects tailored to financial [regression](https://en.wikipedia.org/wiki/Regression_analysis) and classification tasks.
 
 ## Projects
 
