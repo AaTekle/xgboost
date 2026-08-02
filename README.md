@@ -1,6 +1,6 @@
 # [XGBoost Models](https://machinelearningmastery.com/extreme-gradient-boosting-ensemble-in-python/) (Financial Data)
 
-## Note: Using [Extreme Gradient Boosting](https://www.sciencedirect.com/topics/computer-science/extreme-gradient-boosting)
+#### Note: Using [Extreme Gradient Boosting](https://www.sciencedirect.com/topics/computer-science/extreme-gradient-boosting)
 
 
 Two XGBoost models [**ensemble learning**](https://www.geeksforgeeks.org/machine-learning/a-comprehensive-guide-to-ensemble-learning/) tailored to financial [**regression**](https://en.wikipedia.org/wiki/Regression_analysis) and [**classification**](https://www.ibm.com/think/topics/classification-machine-learning) tasks.
