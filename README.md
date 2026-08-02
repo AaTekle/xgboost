@@ -10,12 +10,19 @@ Two XGBoost models [**ensemble learning**](https://www.geeksforgeeks.org/machine
 
 ### S&P 500 Price Forecasting
 
-* Predicts the next trading day's closing price.
-* Uses five years of S&P 500 OHLCV data.
+* Predicts each stock’s next-day log return and converts it into a next-day closing-price forecast.
+* Uses five years of S&P 500 OHLCV data with 619,029 rows, 505 tickers, and dates from 2013-02-08 to 2018-02-07.
 * Set up [Moving Averages](https://www.investopedia.com/terms/m/movingaverage.asp), [RSI](https://www.investopedia.com/terms/r/rsi.asp), [EMA](https://www.investopedia.com/terms/e/ema.asp), [MACD](https://www.investopedia.com/terms/m/macd.asp), [Bollinger Bands](https://www.investopedia.com/terms/b/bollingerbands.asp), [VWAP(Volume-Weighted Average Price)](https://www.investopedia.com/terms/v/vwap.asp), [lagged values](https://www.geeksforgeeks.org/machine-learning/what-is-lag-in-time-series-forecasting/), and [time-based features](https://feature-engine.trainindata.com/en/1.8.x/user_guide/timeseries/forecasting/index.html).
-* Uses a 80/20 train-test split.
-* Trains an XGBoost regressor with regularization, early stopping, and grid search.
-* Best test RMSE: **2.67**.
+* uses chronological, purged train-validation-test splits: 411,136 training rows, 89,734 validation rows, and 91,414 test rows.
+* trains an XGBoost regressor with native categorical ticker support, regularization, row and feature subsampling, and validation-based early stopping.
+* tests four parameter configurations; the model uses 18 trees, max_depth=7, min_child_weight=20, subsample=0.75, and colsample_bytree=0.90.
+* /**test results:** RMSE 2.3976, MAE 0.9621, MAPE 0.9775%, R² 0.999663, and 52.19% directional accuracy.
+* **Takeaways:**
+    * the model produced accurate price-level forecasts, with an average error below 1% of the actual closing price
+    * (however) the naive baseline, which uses today’s closing price as tomorrow’s prediction, achieved a lower RMSE of 2.3918 and performed 0.242% better than XGBoost
+        * this shows that the high R² reiterates the fact that daily stock prices usually change very little from one day to the next
+    * the model’s 52.19% directional accuracy suggests a small (predictive) edge, but not enough to show that it would remain profitable after trading costs, slippage, and market risk
+    * the model finds short-term market patterns, but does not perform better than the simple baseline
 
 ### Credit Card Fraud Detection
 
