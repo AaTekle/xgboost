@@ -20,7 +20,7 @@ Two XGBoost models ([**ensemble learning**])(https://www.geeksforgeeks.org/machi
 * **Takeaways:**
     * the model had accurate price-level forecasts, with an average error below 1% of the actual closing price
     * (however) the naive baseline, which uses today’s closing price as tomorrow’s prediction, achieved a lower [**RMSE**](https://en.wikipedia.org/wiki/Root_mean_square_deviation) of 2.3918 and performed 0.242% better than XGBoost
-        * this shows that the high [R²](https://en.wikipedia.org/wiki/Coefficient_of_determination) reiterates the fact that daily stock prices usually change very little from one day to the next
+        * this shows that the high [**R²**](https://en.wikipedia.org/wiki/Coefficient_of_determination) reiterates the fact that daily stock prices usually change very little from one day to the next
     * the model’s 52.19% directional accuracy suggests a small (predictive) edge, but not enough to show that it would remain profitable after trading costs, slippage, and market risk
     * the model finds short-term market patterns, but does not perform better than the simple baseline
     * ![XGB Regression](https://miro.medium.com/v2/resize:fit:720/format:webp/1*2UV8DrF8wbE7PIiYiiSW5w.png)
