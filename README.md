@@ -8,7 +8,7 @@ Two XGBoost models [**ensemble learning**](https://www.geeksforgeeks.org/machine
 
 ## Projects
 
-### S&P 500 Price Forecasting
+### S&P 500 Price Forecasting:
 
 * predicts each stock’s next-day log return and converts it into a next-day closing-price forecast
 * uses five years of S&P 500 OHLCV data with 619,029 rows, 505 tickers, and dates from 2013-02-08 to 2018-02-07
@@ -18,13 +18,13 @@ Two XGBoost models [**ensemble learning**](https://www.geeksforgeeks.org/machine
 * tests four parameter configurations; the model uses 18 trees, max_depth=7, min_child_weight=20, subsample=0.75, and colsample_bytree=0.90
 * **test results:** RMSE 2.3976, MAE 0.9621, MAPE 0.9775%, R² 0.999663, and 52.19% directional accuracy
 * **Takeaways:**
-    * the model produced accurate price-level forecasts, with an average error below 1% of the actual closing price
+    * the model had accurate price-level forecasts, with an average error below 1% of the actual closing price
     * (however) the naive baseline, which uses today’s closing price as tomorrow’s prediction, achieved a lower RMSE of 2.3918 and performed 0.242% better than XGBoost
         * this shows that the high R² reiterates the fact that daily stock prices usually change very little from one day to the next
     * the model’s 52.19% directional accuracy suggests a small (predictive) edge, but not enough to show that it would remain profitable after trading costs, slippage, and market risk
     * the model finds short-term market patterns, but does not perform better than the simple baseline
 
-### Credit Card Fraud Detection
+### Credit Card Fraud Detection:
 
 * Classifies transactions as fraudulent or legitimate.
 * Uses anonymized transaction features and transaction amounts.
