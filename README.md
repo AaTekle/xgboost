@@ -24,7 +24,8 @@ Two XGBoost models ([**ensemble learning**])(https://www.geeksforgeeks.org/machi
     * the model’s 52.19% directional accuracy suggests a small (predictive) edge, but not enough to show that it would remain profitable after trading costs, slippage, and market risk
     * the model finds short-term market patterns, but does not perform better than the simple baseline
     * ![XGB Regression](https://miro.medium.com/v2/resize:fit:720/format:webp/1*2UV8DrF8wbE7PIiYiiSW5w.png)
-    * https://ai.plainenglish.io/xgboost-regression-in-depth-cb2b3f623281
+
+      https://ai.plainenglish.io/xgboost-regression-in-depth-cb2b3f623281
 
 ### Credit Card Fraud Detection:
 
