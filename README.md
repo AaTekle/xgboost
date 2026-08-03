@@ -33,7 +33,7 @@ Two XGBoost models ([**ensemble learning**])(https://www.geeksforgeeks.org/machi
 * Uses anonymized transaction features and transaction amounts.
 * uses a stratified train-test split.
     - makes sure that the training and testing subsets maintain the exact same proportion of class labels as the original dataset. important pre-processing step within ML workflows, prevents random splits from losing minority classes in either subset
-* ehen handling imbalanced data, random sampling can drop or underrepresent rare minority classes in your subsets
+* when handling imbalanced data, random sampling can drop or underrepresent rare minority classes in your subsets
 * uses [**SMOTE**](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html) on the training set to handle class imbalance.
 * trains an [XGBClassifier](https://www.geeksforgeeks.org/machine-learning/xgbclassifier/).
 * ![XGB](https://media.geeksforgeeks.org/wp-content/uploads/20250521100554969405/XG-Boost.webp)
