@@ -21,7 +21,7 @@ Two XGBoost models ([**ensemble learning**])(https://www.geeksforgeeks.org/machi
     * the model had accurate price-level forecasts, with an average error below 1% of the actual closing price
     * (however) the naive baseline, which uses today’s closing price as tomorrow’s prediction, achieved a lower [**RMSE**](https://en.wikipedia.org/wiki/Root_mean_square_deviation) of 2.3918 and performed 0.242% better than XGBoost
         * this shows that the high [**R²**](https://en.wikipedia.org/wiki/Coefficient_of_determination) reiterates the fact that daily stock prices usually change very little from one day to the next
-    * the model’s 52.19% directional accuracy suggests a small (predictive) edge, but not enough to show that it would remain profitable after trading costs, slippage, and market risk
+    * the model’s 52.19% directional accuracy shows a small (predictive) edge, but not enough to show that it would remain profitable after trading costs, slippage, and market risk
     * the model finds short-term market patterns, but does not perform better than the simple baseline
     * ![XGB Regression](https://miro.medium.com/v2/resize:fit:720/format:webp/1*2UV8DrF8wbE7PIiYiiSW5w.png)
 
@@ -33,10 +33,10 @@ Two XGBoost models ([**ensemble learning**])(https://www.geeksforgeeks.org/machi
 * Uses anonymized transaction features and transaction amounts.
 * uses a stratified train-test split.
     - makes sure that the training and testing subsets maintain the exact same proportion of class labels as the original dataset. important pre-processing step within ML workflows, prevents random splits from losing minority classes in either subset
-* When handling imbalanced data, random sampling can drop or underrepresent rare minority classes in your subsets
-* Uses [**SMOTE**](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html) on the training set to handle class imbalance.
-* Trains an [XGBClassifier](https://www.geeksforgeeks.org/machine-learning/xgbclassifier/).
+* ehen handling imbalanced data, random sampling can drop or underrepresent rare minority classes in your subsets
+* uses [**SMOTE**](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html) on the training set to handle class imbalance.
+* trains an [XGBClassifier](https://www.geeksforgeeks.org/machine-learning/xgbclassifier/).
 * ![XGB](https://media.geeksforgeeks.org/wp-content/uploads/20250521100554969405/XG-Boost.webp)
-* Evaluates [confusion matrix](https://www.geeksforgeeks.org/machine-learning/confusion-matrix-machine-learning/), [precision](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall), [recall](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall), [F1-score](https://www.geeksforgeeks.org/machine-learning/f1-score-in-machine-learning/), and [ROC-AUC](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc).
+* evaluates [confusion matrix](https://www.geeksforgeeks.org/machine-learning/confusion-matrix-machine-learning/), [precision](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall), [recall](https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall), [F1-score](https://www.geeksforgeeks.org/machine-learning/f1-score-in-machine-learning/), and [ROC-AUC](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc).
 * [**Fraud recall:**](https://www.datacamp.com/tutorial/precision-vs-recall) **0.88**.
 * [**ROC-AUC:**](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc) **0.938**.
