@@ -1,6 +1,6 @@
 # [XGBoost Models](https://machinelearningmastery.com/extreme-gradient-boosting-ensemble-in-python/) (Financial Data)
 
-### Note: Using [Extreme Gradient Boosting](https://www.sciencedirect.com/topics/computer-science/extreme-gradient-boosting)
+### [Extreme Gradient Boosting](https://www.sciencedirect.com/topics/computer-science/extreme-gradient-boosting)
 - fast high-performance ml algo that uses gradient boosted decision trees. works by building trees one after another, where each new tree fixes the errors (residuals) of the previous ones. used with structured data because of speed, built-in regularization, and parallel processing
 
 
